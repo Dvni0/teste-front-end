@@ -66,8 +66,6 @@ O servidor será inicializado, operando por padrão no endereço local apontado 
 
 ## Autor
 
-**Vinícius Barros ** Estudante de Engenharia da Computação na FIAP.
+Vinícius Barros - Estudante de Engenharia da Computação na FIAP.
 
 🔗 **LinkedIn:** [Inserir URL do Perfil\]](https://www.linkedin.com/in/viniciusbarros-souza/)  
-
-```
