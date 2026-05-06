@@ -44,7 +44,7 @@ Siga as etapas abaixo para compilar e executar o projeto em um ambiente de desen
 
 ### 1. Clonagem do Repositório
 ```bash
-git clone [https://github.com/Dvni0/teste-front-end.git](hhttps://github.com/Dvni0/teste-front-end.git)
+git clone https://github.com/Dvni0/teste-front-end.git
 ```
 
 ### 2. Instalação de Dependências
