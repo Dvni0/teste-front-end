@@ -1,16 +1,16 @@
 import './style.scss';
 
-// Importação dos assets conforme os nomes identificados
+
 import shieldIcon from '../../assets/20_shieldcheck.jpg';
 import truckIcon from '../../assets/22_truck.jpg';
 import cardIcon from '../../assets/25_creditcard.jpg';
 import logo from '../../assets/29_logo.jpg';
 import searchIcon from '../../assets/26_magnifyingglass.jpg';
-import boxIcon from '../../assets/boxShipping.png'; // Ícone da caixa (Pedidos)
+import boxIcon from '../../assets/boxShipping.png'; 
 import heartIcon from '../../assets/7_heart.jpg';
 import userIcon from '../../assets/9_usercircle.jpg';
 import cartIcon from '../../assets/11_shoppingcart.jpg';
-import crownIcon from '../../assets/CrownSimplecrown.png'; // Coroa exclusiva para Assinatura
+import crownIcon from '../../assets/CrownSimplecrown.png'; 
 
 export function Header() {
   return (
