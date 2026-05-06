@@ -68,4 +68,4 @@ O servidor será inicializado, operando por padrão no endereço local apontado 
 
 Vinícius Barros - Estudante de Engenharia da Computação na FIAP.
 
-🔗 **LinkedIn:** (https://www.linkedin.com/in/viniciusbarros-souza/)  
+🔗 **LinkedIn:** https://www.linkedin.com/in/viniciusbarros-souza/  
