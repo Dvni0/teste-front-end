@@ -1,0 +1,53 @@
+@use '../../styles/variables' as var;
+
+.category-nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  .category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+
+    &__icon {
+      width: 128px;
+      height: 128px;
+      background-color: #f4f4f4;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 16px;
+      transition: all 0.3s ease;
+      overflow: hidden;
+
+      img {
+        width: 60px; // Força o ícone a ficar pequeno
+        height: 60px;
+        object-fit: contain;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 600;
+      color: var.$color-secondary;
+    }
+
+    &.active .category-item__icon,
+    &:hover .category-item__icon {
+      background-color: #fff;
+      box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.13);
+    }
+
+    &.active p,
+    &:hover p {
+      color: var.$color-primary; // Texto Rosa
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@use '../../styles/variables' as var;
+
+.partners {
+  display: flex;
+  justify-content: space-between; // Mantém um de cada lado
+  gap: 40px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+
+  &__card {
+    width: 48%; // Força a ter exatamente duas colunas
+    height: 350px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 40px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+      border-radius: 10px;
+    }
+  }
+
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+
+    h3 {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 32px;
+      max-width: 200px;
+    }
+    button {
+      background-color: var.$color-yellow; 
+      color: var.$color-secondary; 
+      border: none;
+      padding: 12px 32px;
+      border-radius: 4px;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+}

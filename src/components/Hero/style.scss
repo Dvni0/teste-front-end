@@ -1,0 +1,44 @@
+@use '../../styles/variables' as var;
+
+.hero {
+  // Caminho para a imagem real da Black Friday
+  background-image: url('../../assets/Rectangle 250.png'); 
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.15); // Camada suave para legibilidade
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 40px;
+
+    h1 { font-size: 48px; font-weight: 700; line-height: 1.2; }
+    p { font-size: 36px; font-weight: 600; margin: 16px 0 32px; }
+
+    button {
+      background-color: var.$color-yellow; // Amarelo
+      color: var.$color-secondary;
+      border: none;
+      padding: 14px 40px;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+  }
+}

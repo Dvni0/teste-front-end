@@ -1,0 +1,67 @@
+@use '../../styles/variables' as var;
+
+.product-card {
+  width: 270px;
+  flex: 0 0 270px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.2s;
+
+  &:hover { transform: translateY(-5px); }
+
+  &__image {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    font-size: 15px;
+    font-weight: 300;
+    color: var.$color-secondary;
+    margin-bottom: 16px;
+    height: 44px;
+    overflow: hidden;
+  }
+
+  &__prices {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+
+    .price-old {
+      font-size: 14px;
+      color: #808080;
+      text-decoration: line-through;
+    }
+
+    .price-current {
+      font-size: 20px;
+      font-weight: 700;
+      color: var.$color-secondary;
+      margin: 4px 0;
+    }
+
+    .installments { font-size: 12px; color: var.$color-secondary; }
+    .shipping { font-size: 12px; font-weight: bold; color:#271C8F; margin-top: 8px; }
+  }
+
+  &__button {
+    width: 100%;
+    height: 44px;
+    background-color: #3442B5; // Botão Azul
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+}
