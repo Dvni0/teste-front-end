@@ -1,5 +1,4 @@
 import './style.scss';
-// Usando o logo do ZIP[cite: 6]
 import brandLogo from '../../assets/29_logo.jpg'; 
 
 export function Brands() {
